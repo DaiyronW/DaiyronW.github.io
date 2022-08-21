@@ -9,7 +9,7 @@
 
     <style>
         body{
-            background-image: url(Backdrop.png);
+            background-image: url(imgs/Backdrop.png);
             display: flex;
             flex-flow: column;
             align-items: center;
@@ -19,10 +19,10 @@
         .contact1-sec{
             display: flex;
             flex-flow: column;
-            padding-left: 200px;
-            padding-right: 200px;
-            padding-top: 0px;
-            padding-bottom: 0px;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 20px;
+            padding-bottom: 20px;
             background-color: rgb(64, 4, 126);   
             width: 50vw;
             color: white;
@@ -42,8 +42,8 @@
             max-width: 400px;
             border-radius: 5%;
             position: absolute;
-            left: 65%;
-            top: 50px;
+            left: 63%;
+            top: 75px;
             padding-top: 0px;
         }
 
@@ -54,8 +54,89 @@
             font-size: large;
             text-align: justify;
             align-self: auto;
+            padding-right: 50px;
             
         }
+
+        .contact2-sec{
+            display: flex;
+            flex-flow: column;
+            padding-left: 250px;
+            padding-right: 250px;
+            padding-top: 20px;
+            padding-bottom: 100px;
+            background-color: #EEDD99;;   
+            width: 50vw;
+            color:#351D61;
+            margin-top: 25px;
+        }
+        .top_butt:hover{
+            color: black;
+            padding: 10px;
+            font-family: 'Trispace', sans-serif;
+            text-decoration: none;
+            padding-inline: 20px;
+            align-items: center;
+            background-color: #fff;
+            font-size: small;
+            
+            
+        }
+
+        .top_butt{
+            color: #fff;
+            padding: 10px;
+            font-family: 'Trispace', sans-serif;
+            text-decoration: none;
+            padding-inline: 15px;
+            align-items: center;
+            background-color: black;
+            font-size: small;
+            position: relative;
+            bottom: 0px;
+            right: 180px;
+        }
+
+        .social_text{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            word-spacing: 5px;
+        }
+        
+        .logo-link{
+            max-width:100px;
+            max-height: 100px;
+            position: relative;
+            right: 100px; 
+            cursor: pointer;
+        }
+
+        .logo-pic{
+            max-width:100px;
+            max-height: 100px;
+            position: relative;
+            right: 8px; 
+        }
+
+        /*button{
+            opacity: 50px; 
+        }*/
+
+        .img{
+            position: relative;
+            left: 15px;
+        }
+
+        .button_one{
+            position: relative;
+            right: 75px;
+            font-size: large;
+        }
+
+        .logo-pic:hover{
+            animation: shake
+        }
+
 
 
 
@@ -63,10 +144,15 @@
 </head>
 <body>
     <div class="contact1-sec">
-        <img class="contact_photo" src="contact.jpg">
+        <a href="index.html"><button type="button" class="top_butt">Go Back</button></a>
+        <img class="contact_photo" src="imgs/contact.jpg">
         <h1 class="first_intro">Hello World!</h1>
         <h3 class="contact_text">I hope you are enjoying my website, I know it is not perfect but I am still working on perfecting my craft.<br><br>If you have any questions or suggestions that can help me improve my skills please reach out to any of my socials below.<br><br>I would love input to help improve my skills, again thank you for checking out my website. </h3>
     </div>
-    <div class="contact2-sec"></div>
+    <div class="contact2-sec">
+        <h2 class="social_text">Here are some ways to contact me:</h2>
+        <span class="button_one">Github</span>
+         <a href="http://github.com/DaiyronW"><button type="button" class="logo-link"><img class="logo-pic"src="imgs/github2logo.png"></button></a>
+    </div>
 </body>
 </html>
