@@ -58,18 +58,7 @@
             
         }
 
-        .contact2-sec{
-            display: flex;
-            flex-flow: column;
-            padding-left: 250px;
-            padding-right: 250px;
-            padding-top: 20px;
-            padding-bottom: 60px;
-            background-color: #EEDD99;;   
-            width: 50vw;
-            color:#351D61;
-            margin-top: 25px;
-        }
+
         .top_butt:hover{
             color: black;
             padding: 10px;
@@ -101,67 +90,60 @@
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             word-spacing: 5px;
+            position: relative;
+        }
+
+        .text{
+            top: 90px;
+            position: relative;
         }
         
-        .logo-link{
-            max-width:150px;
-            max-height: 150px;
-            position: relative;
-            right: 100px; 
-            cursor: pointer;
-        }
+        .container {
+            height: 350px;
+            padding-left: 240px;
+            padding-right: 240px;
+            background: #EEDD99;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 80px;
+            margin: 20px;
+          }
+          
+          .item {
+            width: 150px;
+            height: 150px;
+            border: 4px solid #351D61;
+            background: #351D61; 
+            color: #EEDD99;
+            text-align: center;
+          }
 
-        .logo-pic{
-            max-width:150px;
-            max-height: 150px;
-            position: relative;
-            right: 8px; 
-        }
+          .logo:hover{
+            box-shadow: 5px 5px;
+            transform: translatey(-5%);
+            color: #351D61;
+          }
 
-        button{
-            background-color: #351d61e3
-        }*/
-
-        .img{
-            position: relative;
-            left: 15px;
-        }
-
-        .button_one{
-            position: relative;
-            left: 2px;
-            font-size: large;
-            bottom: 130px;
-        }
-
-        .logo-pic:hover{
-            animation: shake
-        }
-
-        .logo-link2{
-            position: relative;
-            left: 150px;
-            max-width: 150px;
-            max-height: 133px;
-            bottom: 133px;
-            cursor: pointer;
-            
-        }
-
-        .logo-pic2{
+          .logo2:hover{
+            box-shadow: 5px 5px;
+            transform: translatey(-5%);
+            color: #351D61;
+          }
+        
+          .logo{
             max-width: 125px;
             max-height: 125px;
-            right: 0px;
             position: relative;
-        }
-
-        .button_two{
+            top: 10px;
+          }
+         
+          .logo2{
+            max-width: 125px;
+            max-height: 125px;
             position: relative;
-            bottom: 263px;
-            left: 260px;
-            font-size: large;
-
-        }
+            bottom: -5px;
+          }
 
 
 
@@ -175,13 +157,17 @@
         <h1 class="first_intro">Hello World!</h1>
         <h3 class="contact_text">I hope you are enjoying my website, I know it is not perfect but I am still working on perfecting my craft.<br><br>If you have any questions or suggestions that can help me improve my skills please reach out to any of my socials below.<br><br>I would love input to help improve my skills, again thank you for checking out my website. </h3>
     </div>
-    <div class="contact2-sec">
-        <h2 class="social_text">Here are some ways to contact me:</h2>
-        <div><span class="button_one">Github</span>
-         <a href="http://github.com/DaiyronW"><button type="button" class="logo-link"><img class="logo-pic"src="imgs/github2logo.png"></button></a>
-         <div><span class="button_two">Linkedin</span>
-            <a href="https://www.linkedin.com/in/daiyron-williams-834b83246/"><button type="button" class="logo-link2"><img class="logo-pic2"src="imgs/linkedin.png"></button></a>
-
+    <h2 class="text">Here are some ways to get in contact with me:</h2>
+    <div class="container">
+        <div class="item">Github
+            <a href="https://github.com/DaiyronW" target="_blank"><img class="logo" src="imgs/github2logo.png" id="github" alt="github-logo"></a>
+        </div>
+        <div class="item">Linkedin
+            <a href="https://www.linkedin.com/in/daiyron-williams-834b83246/" target="_blank"><img class="logo2" src="imgs/linkedin.png" id="linkedin" alt="linkedin-logo"></a>
+        </div>
+        <div class="item"></div>
+        <div class="item"></div>
+      </div>    
     </div>
     <div>
 
