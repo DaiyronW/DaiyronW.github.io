@@ -4,33 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Daiyron W | Skills</title>
+    <link rel="" href="">
+
     <style>
-    .container {
-        height: 140px;
-        padding: 16px;
-        background: plum;
-        border: 4px solid indigo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-      }
-      
-      .item {
-        width: 60px;
-        height: 60px;
-        border: 4px solid darkslategray;
-        background: skyblue;
-      }
+        .top_butt:hover{
+            color: black;
+            padding: 10px;
+            font-family: 'Trispace', sans-serif;
+            text-decoration: none;
+            padding-inline: 20px;
+            align-items: center;
+            background-color: #fff;
+            font-size: small;
+            
+            
+        }
+
+        .top_butt{
+            color: #fff;
+            padding: 10px;
+            font-family: 'Trispace', sans-serif;
+            text-decoration: none;
+            padding-inline: 15px;
+            align-items: center;
+            background-color: black;
+            font-size: small;
+            position: relative;
+            bottom: 110px;
+            right: 180px;
+        }
+
+        .skills-logo{
+            max-width: 225px;
+            position: relative;
+            left: 350px;
+            top: 25px;
+        }
+
+        .items:hover{
+            transform: translatey(-5%);
+        }
+
+        .text{
+            text-align: center;
+            color: #fff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background-image: url(imgs/Backdrop.png);
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .section{
+            background-color: rgb(64, 4, 126);
+            display: flex nowrap;
+            padding-left: 250px;
+            padding-right: 250px;
+            flex-flow: column nowrap;
+            height: 650px;
+            margin-top: 25px;
+            border-radius: 10px;
+            align-items: center;
+
+        }
+
+        .container{
+            display: flex;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            flex-flow: row wrap;
+            align-items: center;
+            width: 50%;
+            justify-content: space-evenly;
+            position: relative;
+            left: 175px
+            
+        }
+
+        .items{
+           color: #fff;
+           justify-content: space-evenly;
+           width: 30%;
+           display: flex nowrap;
+           flex-flow: row wrap;
+           align-items: center;
+           justify-content: center;
+           max-width: 27%;
+           text-align: center;
+           word-spacing: 35%;
+
+        }
+
+     
+
+
+
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-      </div>
+    <div class="section">
+        <div class="skills-logo" style="align-items:center"><a href="index.html"><img id="skill-logo" src="imgs/Skills2.webp" alt="logo"></div>
+        <a href="index.html"><button type="button" class="top_butt">Go Back</button></a>
+            <div class="text">
+                <h2>Here are some skills that I have knowledge in:</h2>
+                <h3>(I am always interested in learning new skills)</h3>
+            </div>
+        <div class="container">
+            <div class="items">Git & DVDCs
+                <img src="imgs/icons8-git.svg" alt="Git-Icon">
+            </div>
+            <div class="items">HTML
+                <img src="imgs/icons8-html-5.svg" alt="HTML-icon">
+            </div>
+            <div class="items">CSS
+                <img src="imgs/icons8-css3.svg" alt="CSS-icon">
+            </div>
+            <div class="items">JavaScript
+                <img src="imgs/icons8-javascript-logo.svg" alt="JS-icon">
+            </div>
+            <div class="items">Command Line
+                <img src="imgs/icons8-command-line-64.png" alt="CL-icon">
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
